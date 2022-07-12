@@ -1,2 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[ブログ]]></description><link>https://ajfafg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jul 2022 09:19:12 GMT</lastBuildDate><item><title><![CDATA[Hello World!]]></title><description><![CDATA[個人ブログを立ち上げてみました．技術的な記事は今後も Zenn に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています． 早くハッカソンの参加記を書きたかったので今（2022-07-1…]]></description><link>https://ajfafg.github.io/hello-world/</link><guid isPermaLink="false">https://ajfafg.github.io/hello-world/</guid><pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;個人ブログを立ち上げてみました．技術的な記事は今後も &lt;a href=&quot;https://zenn.dev/arjef&quot;&gt;Zenn&lt;/a&gt; に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[ブログ]]></description><link>https://ajfafg.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jul 2022 13:51:29 GMT</lastBuildDate><item><title><![CDATA[技育CAMPハッカソン vol.5 に参加しました]]></title><description><![CDATA[技育 CAMP ハッカソンの参加は今回で…]]></description><link>https://ajfafg.github.io/giiku-camp-vol5-2022/</link><guid isPermaLink="false">https://ajfafg.github.io/giiku-camp-vol5-2022/</guid><pubDate>Tue, 12 Jul 2022 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;技育 CAMP ハッカソンの参加は今回で 2 回目となります&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;．前回は一人での参加でしたが，今回は研究室の先輩と二人での参加でした．おかげさまで，前回の「一人ユニット」というチーム名から「二人ユニット」という名前に昇格できて良かったです．&lt;/p&gt;
+&lt;p&gt;何はともあれ，まずは成果物の発表スライドです．&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 59.27083333333333%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vThohr7TaWkSfmE0Fkqj9DVIBzGli7eFANHvUhdbsZNlsCVlbNTSGY9Uq8Ox64TqnaePWMarnbedali/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;p&gt;……完成しませんでした！&lt;/p&gt;
+&lt;p style=&quot;text-align:right&quot;&gt;&lt;b&gt;終&lt;/b&gt;&lt;/p&gt;
+&lt;h2&gt;弁明したい&lt;/h2&gt;
+&lt;p&gt;初の参加記を終える前に，何が難しかったのか少し説明させてください！　なお，僕は Web フロントエンドの担当だったので，そちらの視点での難しさとなります．&lt;/p&gt;
+&lt;h3&gt;GraphQL を用いたイケイケな開発方法がよくわからない問題&lt;/h3&gt;
+&lt;p&gt;ここでイケイケとは，クエリの記述時に自動補完が効き，そのクエリから型が自動生成でき，宣言的でかつ型安全に GraphQL で通信できることを指しています．何だか色んな条件が含まれていますが，ここの問題はこれらの条件を満たすためには選定すべき技術が多いといったものになります．&lt;/p&gt;
+&lt;p&gt;ここで言ってる内容を要約すると「初めて触る技術は考えることが多くて大変」となるので GraphQL に限った話じゃないやろって感じなんですが，まぁイケイケな開発方法を追い求めていたら時間が溶けていたという話です．ウワー！&lt;/p&gt;
+&lt;h3&gt;GraphQL のモックが期待通りに動いてくれない問題&lt;/h3&gt;
+&lt;p&gt;GraphQL のモックライブラリとして &lt;a href=&quot;https://github.com/mswjs/msw&quot;&gt;MSW&lt;/a&gt; を利用していたのですが，期待通りに動いてくれなくて困っていました．Next.js を使っているために MSW が動くべき環境がブラウザとサーバで 2 つあり，どちらの環境でも動くような設定にできていなかった説が濃厚ですが，結局解決できずただ時間が消費されただけでした．ウワー！&lt;/p&gt;
+&lt;h3&gt;睡眠が足りていない問題&lt;/h3&gt;
+&lt;p&gt;致命的です．睡眠が足りていないと判断を誤ります．特にマズかったのが，Next.js で作っていたアプリを通常の React で作り直し始めたことです．当時起こっていた問題は，そのアプリを Amplify にデプロイすると ISR するページが 503 となる，というものでした．これではマズいので対処しなきゃなんですが，その対処法が最悪ですね．&lt;a href=&quot;https://zenn.dev/eringiv3/articles/5fa044cc92c3a3&quot;&gt;この記事&lt;/a&gt;によると今回問題になっていたのは ISR なので，最初から作り直すのではなく SSR にするだけで対処できたはずです．ウ，ウワー！！&lt;/p&gt;
+&lt;p&gt;↓ これは今回のハッカソンの一番の成果&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;今回のハッカソンの1番の成果、研究室でいつでもわかんないっピができるようになったこと &lt;a href=&quot;https://t.co/E8R9P09HlE&quot;&gt;pic.twitter.com/E8R9P09HlE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Show(暫定) (@ajfAfg) &lt;a href=&quot;https://twitter.com/ajfAfg/status/1546073798008483840?ref_src=twsrc%5Etfw&quot;&gt;July 10, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;h2&gt;時をかけられるのなら&lt;/h2&gt;
+&lt;p&gt;最初から通常の React で作りたいです．僕がまだ Next.js を理解できていないことが原因ではあるのですが，プログラムがどの環境で実行されるのか意識しながらコードを書くのは難しいです．最初から通常の React で作っていたら，モックや 503 の問題を始めとする多くの問題に苦しまなくても良かったです．多分．&lt;/p&gt;
+&lt;p&gt;あと，挑戦する技術を GraphQL に絞っていたらよかったです．流石に詰め込みすぎた．ISR や DDD 難しかったです．&lt;/p&gt;
+&lt;h2&gt;それでも楽しいハッカソン&lt;/h2&gt;
+&lt;p&gt;今回は大分しんどさの方が勝っていたけれども，やっぱり楽しかったです．大勢でわいわい開発するあの雰囲気が好きだし，すごい人ばかりで刺激されまくりです．また来月あたりに参加したいな．&lt;/p&gt;
+&lt;!-- ## まとめ
+
+GraphQL かなり面白かったので，今後も使っていきたいです．今回は GraphQL のクライアントとして [Apollo Client](https://github.com/apollographql/apollo-client) を使ったけど，次は [Relay](https://github.com/facebook/relay) や [urql](https://github.com/FormidableLabs/urql) も使ってみたい．サーバも書きたい！ --&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;&lt;a href=&quot;https://github.com/ajfAfg/emojion&quot;&gt;前回の成果物&lt;/a&gt;&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Hello World!]]></title><description><![CDATA[個人ブログを立ち上げてみました．技術的な記事は今後も Zenn に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています． 早くハッカソンの参加記を書きたかったので今（2022-07-1…]]></description><link>https://ajfafg.github.io/hello-world/</link><guid isPermaLink="false">https://ajfafg.github.io/hello-world/</guid><pubDate>Tue, 12 Jul 2022 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;個人ブログを立ち上げてみました．技術的な記事は今後も &lt;a href=&quot;https://zenn.dev/arjef&quot;&gt;Zenn&lt;/a&gt; に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．&lt;/p&gt;
 &lt;p&gt;早くハッカソンの参加記を書きたかったので今（2022-07-12）はテンプレートをそのまま使っていていますが，盆栽は今後じっくりとやっていきます．&lt;/p&gt;</content:encoded></item></channel></rss>
