@@ -13,7 +13,7 @@ date: "2023-09-26T22:30:00"
 
 ## 発表した作品
 
-Calculus of inductive constructions (CIC) を理論的基盤とする，ブロックベースで証明を記述可能な日本語定理証明支援系「かたぱ」を発表しました．発表資料は以下:
+Calculus of inductive constructions (CIC) を理論的基盤とする，ブロックベースで証明を記述可能な日本語定理証明支援系「[かたぱ](https://katapa.app)」を発表しました．発表資料は以下:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTZ26tRxuw9TNJQHrJBgYKyKS356hUkAPx9-nEVc2GSTtj435cvCdvYvuZMZFwhH4YE6v7dGcdScmD8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
