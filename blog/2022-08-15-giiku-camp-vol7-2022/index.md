@@ -3,7 +3,7 @@ title: 技育CAMPハッカソン vol.7 に参加しました
 slug: giiku-camp-vol7-2022
 ---
 
-[技育 CAMP ハッカソン vol.7](https://talent.supporterz.jp/events/3207890b-4b45-46f6-881b-e761a919cbe1/)に参加しました．[前回](../giiku-camp-vol5-2022)から約 1 ヶ月ぶりの参加です．今回は個人での参加だったので，チーム名が二人ユニットから一人ユニットに退化してしまいました．かなしみ．
+[技育 CAMP ハッカソン vol.7](https://talent.supporterz.jp/events/3207890b-4b45-46f6-881b-e761a919cbe1/)に参加しました．[前回](/blog/giiku-camp-vol5-2022/)から約 1 ヶ月ぶりの参加です．今回は個人での参加だったので，チーム名が二人ユニットから一人ユニットに退化してしまいました．かなしみ．
 
 とりあえず成果物の発表スライド．
 
