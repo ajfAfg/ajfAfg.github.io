@@ -23,9 +23,7 @@ date: "2022-09-17T00:58:00"
 
 ## Chatwork とは
 
-<div align="center" style="margin: 4rem">
-<img src="./cw_logo_vt_color.svg" alt="Chatwork" width="300" />
-</div>
+![Chatwork](./cw_logo_vt_color.svg)
 
 Chatwork さんは，「働くをもっと楽しく、創造的に」というミッションの下，日本の 99.7%を占める中小企業の生産性を向上するビジネスを展開しています．現在の主力サービスは社名にもなっている Chatwork というビジネスチャットであり，国内利用者数 No.1 みたいです．今後はこのビジネスチャットを中心にさまざまなソリューションを提供し，ビジネスの基盤として「中小企業の生産性を向上する」といった大きな課題の解決を狙っています．
 
@@ -161,9 +159,7 @@ Chatwork さんは，「働くをもっと楽しく、創造的に」という�
 
 ↓ これはウチのチームの Miro で爆誕した謎の図
 
-<div align="center" style="margin: 2rem">
-    <img src="./mystery.png" alt="Miro に爆誕した謎の図" width="300" />
-</div>
+![Miro に爆誕した謎の図](./mystery.png)
 
 他のチームには DDD（デデデ大王）がいたりしました．
 
@@ -183,9 +179,7 @@ FE と BE どちらのコースにするかはめちゃくちゃ悩みました�
 
 また，インターン初日に Twitter 感覚で使えるチャット（c.f. Slack の Times）が設けられ，そこに書いた講義中のメモや日報から雑談や議論に発展したりと一週目からわいわいできました．↓ こんな感じ．
 
-<div align="center" style="margin: 2rem">
-    <img src="./first-tweet.png" alt="初めてのツイート" width="200" />
-</div>
+![初めてのツイート](./first-tweet.png)
 
 #### 「アジャイル・スクラムの技法」
 

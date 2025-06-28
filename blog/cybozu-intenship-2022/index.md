@@ -34,9 +34,7 @@ TODO: 他のコースの参加を検討している人に向けて，それら�
 
 ## サイボウズとは
 
-<div align="center" style="margin: 4rem">
-<img src="./logo_cybozu_Square_A.png" alt="Cybozu" width="300" />
-</div>
+![Cybozu](./logo_cybozu_Square_A.png)
 
 サイボウズさんは，「チームワークあふれる社会を創る」というパーパスの下，チームワークを促進・支援するグループウェア・メソッド事業を展開しています．将来の製品やサービスの基盤を作るための研究開発も行っています．サイボウズさんが提供されているグループウェアは kintone・サイボウズ Office・Garoon・メールワイズの主に 4 つであり，それぞれの役割が異なるために多様なチームを幅広く支援できます．
 
