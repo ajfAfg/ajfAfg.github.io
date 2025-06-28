@@ -223,20 +223,20 @@ FE と BE どちらのコースにするかはめちゃくちゃ悩みました�
 
 ```typescript
 interface Foo {
-  _tag: "Foo"
-  value: string
+  _tag: "Foo";
+  value: string;
 }
 interface Bar {
-  _tag: "Bar"
-  value: string
+  _tag: "Bar";
+  value: string;
 }
 ```
 
 2. 公称型のエミュレーション（ブレンディング方式）
 
 ```typescript
-type Foo = string & { _tag: "Foo" }
-type Bar = string & { _tag: "Bar" }
+type Foo = string & { _tag: "Foo" };
+type Bar = string & { _tag: "Bar" };
 ```
 
 よっしゃー！　これでもうコンガとボンゴを間違えることはありません．ボンがコンガで，コンがボンゴですよ．
