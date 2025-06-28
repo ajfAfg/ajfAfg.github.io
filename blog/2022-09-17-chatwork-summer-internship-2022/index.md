@@ -1,5 +1,6 @@
 ---
 title: Chatwork サマーインターンシップ2022に参加しました
+slug: chatwork-summer-internship-2022
 ---
 
 [Chatwork サマーインターンシップ 2022](https://recruit.chatwork.com/internship/2022/engineer.html) に参加しました．コースがフロントエンド（FE）とバックエンド（BE）に分かれていて，僕は FE の方に参加したのですが，それなのにこの個人ブログはまだテンプレートを使っててヤバいなーとなっています．FE の腕が光るところなのに！ 時間確保せんとね．

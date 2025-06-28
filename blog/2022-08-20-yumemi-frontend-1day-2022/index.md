@@ -1,5 +1,6 @@
 ---
 title: ゆめみ フロントエンド 1day インターンに参加しました
+slug: yumemi-frontend-1day-2022
 ---
 
 [ゆめみ フロントエンド 1day インターン](https://talent.supporterz.jp/events/7932c2f1-254c-4b19-b201-9cd2d216b2bf/)に参加しました．ク s……伸び代しかないコードをモブプログラミングの形式でリファクタリングするという内容でした．
