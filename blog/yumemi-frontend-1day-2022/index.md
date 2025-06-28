@@ -7,6 +7,8 @@ date: "2022-08-20T22:12:03"
 
 成果物は[こちらのリポジトリのブランチ](https://github.com/yumemi-inc/frontend-1day-curriculum/tree/intern_20220820_team6)で公開されています．
 
+<!-- truncate -->
+
 ## 諸情報
 
 ### 選考内容

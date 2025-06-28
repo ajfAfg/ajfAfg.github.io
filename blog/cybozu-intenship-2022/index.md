@@ -15,6 +15,8 @@ date: "2022-10-12T00:35:00"
 
 <iframe src="https://drive.google.com/file/d/1tQ0NQyfI7ptYZdebPoKCrk9TTIOhQTEg/preview" width="640" height="480" allow="autoplay"></iframe>
 
+<!-- truncate -->
+
 ## 対象読者
 
 この記事は主に以下の読者を想定しています．

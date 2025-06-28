@@ -13,6 +13,8 @@ date: "2022-08-15"
 
 また，今回は[優秀賞](https://twitter.com/geek_pjt/status/1556208824687947776?s=21&t=hvh0cHoG8oOvWvENKLaToQ)をいただきました！　ありがとうございます！！
 
+<!-- truncate -->
+
 ## 仕様
 
 - 文字コードは ASCII コード
