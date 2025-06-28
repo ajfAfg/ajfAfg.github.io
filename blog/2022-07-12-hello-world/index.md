@@ -1,6 +1,5 @@
 ---
 title: Hello World!
-date: "2022-07-12T17:00:00"
 # description: "Hello World"
 ---
 
