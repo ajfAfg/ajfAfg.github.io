@@ -1,0 +1,44 @@
+# 型検査やビルドが通るか確認するワークフロー
+---
+name: ci
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    types: ["opened", "synchronize", "reopened"]
+
+permissions: {}
+
+defaults:
+  run:
+    shell: bash
+
+# ワークフローが複数起動したら自動キャンセル
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get Node.js version
+        id: get_node_version
+        run: |
+          echo "node_version=$(yq '.tools.node' mise.toml)" >> $GITHUB_OUTPUT
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ steps.get_node_version.outputs.node_version }}
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
