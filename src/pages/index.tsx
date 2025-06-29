@@ -1,91 +1,58 @@
-import * as React from "react"
-import { Link, graphql, PageProps } from "gatsby"
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import Heading from "@theme/Heading";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import styles from "./index.module.css";
+import { Badge } from "../components/Badge";
 
-type Props = PageProps<GatsbyTypes.BlogIndexQuery>
+const SnsBadges = (): ReactNode => (
+  <div className={styles.badges}>
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat"
+      altText="GitHub バッジ"
+      linkUrl="https://github.com/ajfAfg"
+    />
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-X-181717?logo=x&logoColor=white&style=flat&labelColor=black"
+      altText="X バッジ"
+      linkUrl="https://x.com/ajfAfg"
+    />
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-Last.fm-D51007?logo=lastdotfm&logoColor=white&style=flat"
+      altText="Last.fm バッジ"
+      linkUrl="https://www.last.fm/user/ajfAfg"
+    />
+  </div>
+);
 
-const BlogIndex: React.FC<Props> = ({ data, location }) => {
-  const siteTitle = data.site?.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
+const HomepageHeader = (): ReactNode => {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter?.title || post.fields?.slug
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className="container">
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
+        </Heading>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <SnsBadges />
+      </div>
+    </header>
+  );
+};
 
-          return (
-            <li key={post.fields!.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields!.slug!} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter!.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter!.description || post.excerpt!,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+export default function Home(): ReactNode {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <Layout title={siteConfig.title} description="ajfAfg's personal website">
+      <HomepageHeader />
+      <main>
+        {/* TODO: 各 Product や Blog などの直近コンテンツを表示したい */}
+        <div className="container text--center text--bold margin-vert--xl">
+          <p style={{ fontSize: 32 }}>🚧工事中🚧</p>
+        </div>
+      </main>
     </Layout>
-  )
+  );
 }
-
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query BlogIndex {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`
