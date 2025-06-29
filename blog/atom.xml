@@ -2,11 +2,100 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ajfafg.github.io/blog</id>
     <title>ajfAfg's House Blog</title>
-    <updated>2024-04-28T00:00:00.000Z</updated>
+    <updated>2025-06-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ajfafg.github.io/blog"/>
     <subtitle>ajfAfg's House Blog</subtitle>
     <icon>https://ajfafg.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[個人サイトをリフォームしました]]></title>
+        <id>https://ajfafg.github.io/blog/reform-personal-website</id>
+        <link href="https://ajfafg.github.io/blog/reform-personal-website"/>
+        <updated>2025-06-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[個人サイト（このサイト）をリフォームしました。フレームワークとしては Docusaurus を使っています。]]></summary>
+        <content type="html"><![CDATA[<p>個人サイト（このサイト）をリフォームしました。フレームワークとしては Docusaurus を使っています。</p>
+<p>本稿では、リフォームのモチベや、Docusaurus 使ってみてどう？みたいな話を書いています。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="モチベーション">モチベーション<a href="https://ajfafg.github.io/blog/reform-personal-website#%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" class="hash-link" aria-label="モチベーション への直接リンク" title="モチベーション への直接リンク">​</a></h2>
+<p>概ね以下です:</p>
+<ul>
+<li>度重なる放置の結果、古くなりすぎてバージョンアップが大変。</li>
+<li>第三者のテンプレートを使っているが、その構造がよくわからんのでサイトの拡張が簡単ではない。</li>
+</ul>
+<p>最近 Docusaurus 面白そうだな〜と感じていたので、その使用機会とする目的もあります。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="docusaurus-どうなん">Docusaurus どうなん？<a href="https://ajfafg.github.io/blog/reform-personal-website#docusaurus-%E3%81%A9%E3%81%86%E3%81%AA%E3%82%93" class="hash-link" aria-label="Docusaurus どうなん？ への直接リンク" title="Docusaurus どうなん？ への直接リンク">​</a></h2>
+<p>ブログサイトに求められる機能は大体揃っている印象です。記事のバージョン管理機能があるので、ライブラリやツールのドキュメントとしてもかなり有用そうです。</p>
+<p>以降は、個人的な良いところ・良くなさそうなところをまとめてみます。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="良いところ">良いところ<a href="https://ajfafg.github.io/blog/reform-personal-website#%E8%89%AF%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D" class="hash-link" aria-label="良いところ への直接リンク" title="良いところ への直接リンク">​</a></h3>
+<ul>
+<li>MD, MDX, JSX, TSX でページが書ける。<!-- -->
+<ul>
+<li>当然欲しい。</li>
+</ul>
+</li>
+<li>全て React コンポーネントとして書ける。<!-- -->
+<ul>
+<li>Docusaurus に依存する部分は今のところ以下が確認されていますが、他は純粋な React コンポーネントとして書けます。<!-- -->
+<ul>
+<li><a href="https://docusaurus.io/docs/docusaurus-core" target="_blank" rel="noopener noreferrer">Docusaurus Client API</a> の使用</li>
+<li><code>@theme/Layout</code> の <code>Layout</code> コンポーネントによる各ページのラップ<!-- -->
+<ul>
+<li><a href="https://docusaurus.io/docs/creating-pages#add-a-react-page" target="_blank" rel="noopener noreferrer">ラップしないとナビゲーションバーやフッターが表示されない</a>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>過去の破壊的なバージョンアップに困っている人が多くはなかった。<!-- -->
+<ul>
+<li><a href="https://perapera.faqt.jp/blog/docusaurus-update-guide" target="_blank" rel="noopener noreferrer">このブログで利用しているフレームワーク（Docusaurus）を v2 から v3 へアップデートしてみました。 | ぺらページ</a></li>
+<li><a href="https://zenn.dev/tmd45/scraps/2e111c20e4ef96" target="_blank" rel="noopener noreferrer">Docusaurus v3 対応（v2 からの移行）</a>
+<ul>
+<li>これはやや困ってそうですが、原因は 3rd-party ライブラリの開発停止だったり、やってることがややハッキーだからかなと思っています。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pages という機能が存在する。<!-- -->
+<ul>
+<li>ブログ以外の単一のページが欲しい場合にめちゃくちゃ便利です。このサイトだとプロフィールページやプロダクト紹介ページで使用しています。</li>
+</ul>
+</li>
+<li>ヘッダーとフッターのコンテンツを設定ファイルで設定できる。<!-- -->
+<ul>
+<li>React コンポーネントを編集しなくていいので楽。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="良くなさそうなところ">良くなさそうなところ<a href="https://ajfafg.github.io/blog/reform-personal-website#%E8%89%AF%E3%81%8F%E3%81%AA%E3%81%95%E3%81%9D%E3%81%86%E3%81%AA%E3%81%A8%E3%81%93%E3%82%8D" class="hash-link" aria-label="良くなさそうなところ への直接リンク" title="良くなさそうなところ への直接リンク">​</a></h3>
+<ul>
+<li>Docusaurus のコア部分が担っている仕事と、公式プリセット（<code>@docusaurus/preset-classic</code>）が担っている仕事の切り分けが難しい。<!-- -->
+<ul>
+<li>ちなみにブログ機能や Pages は公式プリセットの仕事。</li>
+<li>公式プリセットは結構レールを引いているので、この 2 つを明確に切り分けられていない状態だと仕事では使いづらいなという印象を持っています。何かしらの特別なことをやりたいのにできない可能性が出てくるので。</li>
+</ul>
+</li>
+<li>ビルドが長い。<!-- -->
+<ul>
+<li>webpack 使ってるから仕方ない気もしますが、なんとかしてほしい。</li>
+</ul>
+</li>
+<li>ブラウザ上に表示されるエラーメッセージは、エラー箇所が併記されてないのでエラー箇所の特定が大変。</li>
+<li>サイトを配信する URL を設定ファイルに書く必要がある。<!-- -->
+<ul>
+<li>サイトはどこで配信されてもいいはずだから URL に依存しないでほしい。</li>
+</ul>
+</li>
+<li><a href="https://infima.dev/" target="_blank" rel="noopener noreferrer">Infima</a> という、Tailwind CSS っぽい CSS フレームワークを利用している。<!-- -->
+<ul>
+<li>開発元は Meta だけど、production ready じゃないのが心配になる。</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="まとめ">まとめ<a href="https://ajfafg.github.io/blog/reform-personal-website#%E3%81%BE%E3%81%A8%E3%82%81" class="hash-link" aria-label="まとめ への直接リンク" title="まとめ への直接リンク">​</a></h2>
+<p>心配な部分もある Docusaurus ですが、レールに乗っていれば適度な拡張性のもと色々できるので今のところ気に入っています。一緒に頑張っていこうな、Docusaurus。</p>
+<p>今後も本ブログをよろしくお願いします。</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[「〇〇を支えてそうな技術 #1」を開催しました]]></title>
         <id>https://ajfafg.github.io/blog/sasaetesou-tech-no1</id>

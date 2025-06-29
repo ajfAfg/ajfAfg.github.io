@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkajfafg_github_io=self.webpackChunkajfafg_github_io||[]).push([[385],{600:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/blog","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
