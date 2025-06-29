@@ -75,7 +75,19 @@ const config: Config = {
         src: "img/ajfAfg.png",
       },
       items: [
+        { to: "/profile", label: "Profile", position: "right" },
+        { to: "/product", label: "Product", position: "right" },
         { to: "/blog", label: "Blog", position: "right" },
+        {
+          href: "https://zenn.dev/arjef",
+          label: "Blog (Tech)",
+          position: "right",
+        },
+        {
+          href: "https://www.docswell.com/user/ajfAfg",
+          label: "Slide",
+          position: "right",
+        },
         {
           href: "https://github.com/ajfAfg",
           label: "GitHub",
