@@ -1,43 +1,57 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import Heading from "@theme/Heading";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
+import { Badge } from "../components/Badge";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+const SnsBadges = (): ReactNode => (
+  <div className={styles.badges}>
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat"
+      altText="GitHub バッジ"
+      linkUrl="https://github.com/ajfAfg"
+    />
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-X-181717?logo=x&logoColor=white&style=flat&labelColor=black"
+      altText="X バッジ"
+      linkUrl="https://x.com/ajfAfg"
+    />
+    <Badge
+      shieldsioUrl="https://img.shields.io/badge/-Last.fm-D51007?logo=lastdotfm&logoColor=white&style=flat"
+      altText="Last.fm バッジ"
+      linkUrl="https://www.last.fm/user/ajfAfg"
+    />
+  </div>
+);
+
+const HomepageHeader = (): ReactNode => {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <SnsBadges />
       </div>
     </header>
   );
-}
+};
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+    <Layout title={siteConfig.title} description="ajfAfg's personal website">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* TODO: 各 Product や Blog などの直近コンテンツを表示したい */}
+        <div className="container text--center text--bold margin-vert--xl">
+          <p style={{ fontSize: 32 }}>🚧工事中🚧</p>
+        </div>
       </main>
     </Layout>
   );
