@@ -41,6 +41,13 @@ jobs:
           node-version: ${{ steps.get_node_version.outputs.node_version }}
           cache: "npm"
 
+      - uses: actions/cache@v4
+        with:
+          key: ${{ runner.os }}-node-${{ steps.get_node_version.outputs.node_version }}-docusaurus-${{ hashFiles( 'blog/**', 'src/**', 'static/**', 'docusaurus.config.ts', 'package-lock.json') }}
+          path: |
+            .docusaurus
+            build
+
       - run: npm ci
       - run: npm run build
 
