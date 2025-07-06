@@ -50,7 +50,6 @@ jobs:
 
       - if: ${{ steps.cache.outputs.cache-hit != 'true'}}
         run: npm ci
-      - if: ${{ steps.cache.outputs.cache-hit != 'true'}}
-        run: npm run typecheck
-      - if: ${{ steps.cache.outputs.cache-hit != 'true'}}
-        run: npm run build
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
