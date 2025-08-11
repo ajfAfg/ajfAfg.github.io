@@ -1,6 +1,8 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
+import { slidesFetchPlugin } from "./src/components/RecentSlides/slidesFetchPlugin";
+import { techArticlesFetchPlugin } from "./src/components/RecentTechArticles/techArticlesFetchPlugin";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -106,6 +108,9 @@ const config: Config = {
 	} satisfies Preset.ThemeConfig,
 
 	plugins: [
+		[techArticlesFetchPlugin, {}],
+		[slidesFetchPlugin, {}],
+
 		// NOTE:
 		// 個人ブログ刷新にあたって、ブログ記事の URL が変更されたため、
 		// 古い URL から新しい URL へのリダイレクトを設定している。
