@@ -8,6 +8,8 @@ on:
     branches: ["main"]
     types:
       - completed
+  schedule:
+    - cron: "0 0 * * 0"
 
 permissions: {}
 
