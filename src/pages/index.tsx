@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 import { Badge } from "../components/Badge";
+import { RecentlyPlayed } from "../components/RecentlyPlayed";
 import { RecentSlides } from "../components/RecentSlides";
 import { RecentTechArticles } from "../components/RecentTechArticles";
 import styles from "./index.module.css";
@@ -56,6 +57,10 @@ export default function Home(): ReactNode {
 				<section className="container margin-vert--xl">
 					<h2>Recent Slides</h2>
 					<RecentSlides />
+				</section>
+				<section className="container margin-vert--xl">
+					<h2>Recently Played</h2>
+					<RecentlyPlayed />
 				</section>
 			</main>
 		</Layout>
