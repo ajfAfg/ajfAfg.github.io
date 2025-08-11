@@ -15,3 +15,12 @@
 	height: auto;
 	border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+	.techArticles {
+		flex-direction: column;
+	}
+	.techArticles img {
+		padding: 0 2rem;
+	}
+}
