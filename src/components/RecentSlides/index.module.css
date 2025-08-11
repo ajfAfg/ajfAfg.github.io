@@ -1,0 +1,17 @@
+.slides {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 1rem;
+}
+
+.slides li {
+	flex: 1;
+}
+
+.slides img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}

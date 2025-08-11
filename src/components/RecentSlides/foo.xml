@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+	<channel>
+        <title>Shoichi Sasakiの最新コンテンツ | ドクセル</title>
+		<link>https://www.docswell.com/user/ajfAfg</link>
+		<description>ドクセルはスライドやPDFをかんたんに共有できるサイトです</description>
+		<dc:language>ja</dc:language>
+		<dc:creator>Shoichi Sasaki</dc:creator>
+        <dc:date>2025-06-20T19:57:40+09:00</dc:date>
+        <atom:link rel="hub" href="https://pubsubhubbub.appspot.com" />
+        <atom:link rel="self" type="aplication/rss+xml" href="https://www.docswell.com/feed/latest" />
+        <item>
+            <title><![CDATA[[スライド] 「社内で手軽にHTTPSを使いたい！」を支える化石システムのAWSへのリプレイス]]></title>
+            <link>https://www.docswell.com/s/ajfAfg/K22RL1-2025-06-20-195701?ref=rss</link>
+            <description><![CDATA[Shoichi Sasakiの「社内で手軽にHTTPSを使いたい！」を支える化石システムのAWSへのリプレイスをドクセルで読んでみよう。]]></description>
+			<guid>https://www.docswell.com/s/ajfAfg/K22RL1-2025-06-20-195701</guid>
+			<dc:subject>programming</dc:subject>
+            <dc:creator>Shoichi Sasaki</dc:creator>
+			<pubDate>Fri, 20 Jun 25 19:57:00 +0900</pubDate>
+			<content:encoded><![CDATA[<p>「Engineering Productivity Meetup #4 in 東京」で発表した内容です。<br />
+<br />
+<a href="https://cybozu.connpass.com/event/355795/" target="_blank" rel="nofollow">https://cybozu.connpass.com/event/355795/</a></p>]]></content:encoded>
+			<media:thumbnail width="640" url="https://bcdn.docswell.com/page/4JZ6KPQXJ3.jpg?width=480"/>
+			<media:content width="640" medium="image" type="image/jpeg" url="https://bcdn.docswell.com/page/4JZ6KPQXJ3.jpg?width=480"/>
+			<media:community>
+				<media:statistics views="2894" />
+			</media:community>
+        </item>
+        <item>
+            <title><![CDATA[[スライド] Underground型システム]]></title>
+            <link>https://www.docswell.com/s/ajfAfg/5R217E-2025-06-15-180137?ref=rss</link>
+            <description><![CDATA[Shoichi SasakiのUnderground型システムをドクセルで読んでみよう。]]></description>
+			<guid>https://www.docswell.com/s/ajfAfg/5R217E-2025-06-15-180137</guid>
+			<dc:subject>programming</dc:subject>
+            <dc:creator>Shoichi Sasaki</dc:creator>
+			<pubDate>Sun, 15 Jun 25 18:01:00 +0900</pubDate>
+			<content:encoded><![CDATA[<p>関数型まつり2025で発表した内容です。<br />
+<br />
+プロポーザル： <a href="https://fortee.jp/2025fp-matsuri/proposal/e0274da9-d863-47fe-a945-42eb04185bb9" target="_blank" rel="nofollow">https://fortee.jp/2025fp-matsuri/proposal/e0274da9-d863-47fe-a945-42eb04185bb9</a></p>]]></content:encoded>
+			<media:thumbnail width="640" url="https://bcdn.docswell.com/page/57GV3W9Q7L.jpg?width=480"/>
+			<media:content width="640" medium="image" type="image/jpeg" url="https://bcdn.docswell.com/page/57GV3W9Q7L.jpg?width=480"/>
+			<media:community>
+				<media:statistics views="16201" />
+			</media:community>
+        </item>
+        <item>
+            <title><![CDATA[[スライド] プログラマはぬるぽ静的解析の夢を見るか？]]></title>
+            <link>https://www.docswell.com/s/ajfAfg/K3GLEJ-2025-02-05-010112?ref=rss</link>
+            <description><![CDATA[Shoichi Sasakiのプログラマはぬるぽ静的解析の夢を見るか？をドクセルで読んでみよう。]]></description>
+			<guid>https://www.docswell.com/s/ajfAfg/K3GLEJ-2025-02-05-010112</guid>
+			<dc:subject>programming</dc:subject>
+            <dc:creator>Shoichi Sasaki</dc:creator>
+			<pubDate>Wed, 05 Feb 25 01:01:00 +0900</pubDate>
+			<content:encoded><![CDATA[<p>サイボウズ 開運冬まつり2025 特選話スシの発表内容です</p>]]></content:encoded>
+			<media:thumbnail width="640" url="https://bcdn.docswell.com/page/PJRM85RNE9.jpg?width=480"/>
+			<media:content width="640" medium="image" type="image/jpeg" url="https://bcdn.docswell.com/page/PJRM85RNE9.jpg?width=480"/>
+			<media:community>
+				<media:statistics views="1861" />
+			</media:community>
+        </item>
+        <item>
+            <title><![CDATA[[スライド] サイボウズのインフラQAを1µm支えてそうな技術 〜研修の一環で行うチーム体験の成果発表ドラゴン〜]]></title>
+            <link>https://www.docswell.com/s/ajfAfg/KXE16N-2024-07-18-093815?ref=rss</link>
+            <description><![CDATA[Shoichi SasakiのサイボウズのインフラQAを1µm支えてそうな技術 〜研修の一環で行うチーム体験の成果発表ドラゴン〜をドクセルで読んでみよう。]]></description>
+			<guid>https://www.docswell.com/s/ajfAfg/KXE16N-2024-07-18-093815</guid>
+			<dc:subject>programming</dc:subject>
+            <dc:creator>Shoichi Sasaki</dc:creator>
+			<pubDate>Thu, 18 Jul 24 09:38:00 +0900</pubDate>
+			<content:encoded><![CDATA[<p>「〇〇を支えてそうな技術 #2」での発表資料です。<br />
+<br />
+<a href="https://sasaetesou-tech.connpass.com/event/321081/" target="_blank" rel="nofollow">https://sasaetesou-tech.connpass.com/event/321081/</a></p>]]></content:encoded>
+			<media:thumbnail width="640" url="https://bcdn.docswell.com/page/P7RWR529E9.jpg?width=480"/>
+			<media:content width="640" medium="image" type="image/jpeg" url="https://bcdn.docswell.com/page/P7RWR529E9.jpg?width=480"/>
+			<media:community>
+				<media:statistics views="3417" />
+			</media:community>
+        </item>
+
+
+
+
+                            	</channel>
+</rss>

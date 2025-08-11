@@ -4,6 +4,8 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 import { Badge } from "../components/Badge";
+import { RecentSlides } from "../components/RecentSlides";
+import { RecentTechArticles } from "../components/RecentTechArticles";
 import styles from "./index.module.css";
 
 const SnsBadges = (): ReactNode => (
@@ -47,10 +49,14 @@ export default function Home(): ReactNode {
 		<Layout title={siteConfig.title} description="ajfAfg's personal website">
 			<HomepageHeader />
 			<main>
-				{/* TODO: 各 Product や Blog などの直近コンテンツを表示したい */}
-				<div className="container text--center text--bold margin-vert--xl">
-					<p style={{ fontSize: 32 }}>🚧工事中🚧</p>
-				</div>
+				<section className="container margin-vert--xl">
+					<h2>Recent Blog (Tech)</h2>
+					<RecentTechArticles />
+				</section>
+				<section className="container margin-vert--xl">
+					<h2>Recent Slides</h2>
+					<RecentSlides />
+				</section>
 			</main>
 		</Layout>
 	);
