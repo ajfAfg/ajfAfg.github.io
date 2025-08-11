@@ -20,7 +20,4 @@
 	.techArticles {
 		flex-direction: column;
 	}
-	.techArticles img {
-		padding: 0 1rem;
-	}
 }
