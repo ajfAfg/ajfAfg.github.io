@@ -1,0 +1,17 @@
+.techArticles {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 1rem;
+}
+
+.techArticles li {
+	flex: 1;
+}
+
+.techArticles img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
