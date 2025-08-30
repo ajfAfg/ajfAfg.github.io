@@ -28,7 +28,9 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: write
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    # NOTE: `workflow_run` イベントで起動した場合、前のワークフローが成功したときのみ実行
+    if: ${{ contains(fromJSON('["", "success"]'), github.event.workflow_run.conclusion) }}
 
     steps:
       - uses: actions/checkout@v5
@@ -54,12 +56,10 @@ jobs:
 
       - if: ${{ steps.cache.outputs.cache-hit != 'true'}}
         run: npm ci
-      - if: ${{ steps.cache.outputs.cache-hit != 'true'}}
-        run: npm run build
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
