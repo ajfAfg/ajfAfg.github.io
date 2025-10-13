@@ -1061,15 +1061,6 @@
 <p>でも裏目標の「最優秀賞を取る」が達成できなかったのは悔しいです．もっと精進せねば．夏の間で力をつけて次回こそは！</p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Hello World!]]></title>
-        <id>https://ajfafg.github.io/en/blog/hello-world</id>
-        <link href="https://ajfafg.github.io/en/blog/hello-world"/>
-        <updated>2022-07-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[個人ブログを立ち上げてみました．技術的な記事は今後も Zenn に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．]]></summary>
-        <content type="html"><![CDATA[<p>個人ブログを立ち上げてみました．技術的な記事は今後も <a href="https://zenn.dev/arjef" target="_blank" rel="noopener noreferrer">Zenn</a> に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．</p>
-<p>早くハッカソンの参加記を書きたかったので今（2022-07-12）はテンプレートをそのまま使っていていますが，盆栽は今後じっくりとやっていきます．</p>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[技育CAMPハッカソン vol.5 に参加しました]]></title>
         <id>https://ajfafg.github.io/en/blog/giiku-camp-vol5-2022</id>
         <link href="https://ajfafg.github.io/en/blog/giiku-camp-vol5-2022"/>
@@ -1106,5 +1097,14 @@
 </li>
 </ol>
 </section>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello World!]]></title>
+        <id>https://ajfafg.github.io/en/blog/hello-world</id>
+        <link href="https://ajfafg.github.io/en/blog/hello-world"/>
+        <updated>2022-07-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[個人ブログを立ち上げてみました．技術的な記事は今後も Zenn に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．]]></summary>
+        <content type="html"><![CDATA[<p>個人ブログを立ち上げてみました．技術的な記事は今後も <a href="https://zenn.dev/arjef" target="_blank" rel="noopener noreferrer">Zenn</a> に投稿する予定ですが，パーソナルな内容だったりジョークがすぎるような記事はこちらに投稿しようと考えています．</p>
+<p>早くハッカソンの参加記を書きたかったので今（2022-07-12）はテンプレートをそのまま使っていていますが，盆栽は今後じっくりとやっていきます．</p>]]></content>
     </entry>
 </feed>
