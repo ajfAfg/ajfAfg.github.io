@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "node_version=$(yq '.tools.node' mise.toml)" >> $GITHUB_OUTPUT
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ steps.get_node_version.outputs.node_version }}
           cache: "npm"
