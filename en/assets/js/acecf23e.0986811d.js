@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkajfafg_github_io=self.webpackChunkajfafg_github_io||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/en/blog","blogTitle":"Blog","authorsListPath":"/en/blog/authors"}')}}]);
