@@ -39,7 +39,7 @@ jobs:
           node-version: ${{ steps.get_node_version.outputs.node_version }}
           cache: "npm"
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         id: cache
         with:
           key: ${{ runner.arch }}-${{ runner.os }}-node-${{ steps.get_node_version.outputs.node_version }}-docusaurus-${{ hashFiles( 'blog/**', 'src/**', 'static/**', 'docusaurus.config.ts', 'package-lock.json', 'sidebars.ts', 'tsconfig.json') }}
