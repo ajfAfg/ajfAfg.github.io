@@ -1,10 +1,10 @@
 import { usePluginData } from "@docusaurus/useGlobalData";
 import styles from "./index.module.css";
-import type { Content } from "./techArticlesFetchPlugin";
+import type { ArticleInfo } from "./types";
 
 export const RecentTechArticles = () => {
-	const content = usePluginData("tech-articles-fetch-plugin") as Content;
-	const sortedItems = content.rss.channel.item
+	const articles = usePluginData("tech-articles-fetch-plugin") as ArticleInfo[];
+	const sortedItems = [...articles]
 		.sort(
 			(a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime(),
 		)
@@ -14,8 +14,8 @@ export const RecentTechArticles = () => {
 		<ul className={styles.techArticles}>
 			{sortedItems.map((item) => (
 				<li key={item.title}>
-					<a href={item.link} target="_blank">
-						<img src={item.enclosure["@_url"]} alt={item.title} />
+					<a href={item.link} target="_blank" rel="noopener noreferrer">
+						<img src={item.thumbnailUrl} alt={item.title} />
 					</a>
 				</li>
 			))}
