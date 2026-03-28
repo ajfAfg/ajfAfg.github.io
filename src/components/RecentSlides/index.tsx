@@ -14,7 +14,7 @@ export const RecentSlides = () => {
 		<ul className={styles.slides}>
 			{sortedItems.map((item) => (
 				<li key={item.title}>
-					<a href={item.link} target="_blank">
+					<a href={item.link} target="_blank" rel="noopener">
 						<img src={item["media:content"]["@_url"]} alt={item.title} />
 					</a>
 				</li>
