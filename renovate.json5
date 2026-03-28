@@ -6,9 +6,6 @@
 	"minimumReleaseAge": "14 days",
 
 	"labels": ["renovate"],
-	"lockFileMaintenance": {
-		"enabled": true
-	},
 	"automerge": true,
 	"packageRules": [
 		{
