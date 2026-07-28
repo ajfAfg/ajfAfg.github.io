@@ -3,13 +3,14 @@ import { fetchCybozuBlogArticles } from "./fetchCybozuBlogArticles";
 import { fetchZennArticles } from "./fetchZennArticles";
 import type { ArticleInfo } from "./types";
 
-export const techArticlesFetchPlugin: PluginModule<ArticleInfo[]> = (
-	_context,
-	_options,
-) => {
+// NOTE:
+// `Config.plugins` が受け付ける型は `PluginModule<unknown>` であり、
+// TypeScript 7 からデフォルトで有効になった `strictFunctionTypes` の下では
+// `PluginModule<ArticleInfo[]>` を代入できないため、型引数を指定していない。
+export const techArticlesFetchPlugin: PluginModule = (_context, _options) => {
 	return {
 		name: "tech-articles-fetch-plugin",
-		async loadContent() {
+		async loadContent(): Promise<ArticleInfo[]> {
 			return (
 				await Promise.all([fetchZennArticles(), fetchCybozuBlogArticles()])
 			).flat();
