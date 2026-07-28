@@ -1,6 +1,9 @@
 import type { ArticleInfo } from "./types";
 
-const articleUrls = ["https://blog.cybozu.io/entry/2026/02/24/113000"];
+const articleUrls = [
+	"https://blog.cybozu.io/entry/2026/02/24/113000",
+	"https://blog.cybozu.io/entry/2026/07/28/113000",
+];
 
 const extractMetaContent = (html: string, property: string): string => {
 	const match =
