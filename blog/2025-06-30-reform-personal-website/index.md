@@ -7,7 +7,7 @@ slug: reform-personal-website
 
 本稿では、リフォームのモチベや、Docusaurus 使ってみてどう？みたいな話を書いています。
 
-<!-- truncate -->
+{/* truncate */}
 
 ## モチベーション
 

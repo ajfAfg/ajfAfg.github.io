@@ -7,7 +7,7 @@ slug: yumemi-frontend-1day-2022
 
 成果物は[こちらのリポジトリのブランチ](https://github.com/yumemi-inc/frontend-1day-curriculum/tree/intern_20220820_team6)で公開されています．
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 諸情報
 

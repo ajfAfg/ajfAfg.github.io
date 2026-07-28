@@ -5,7 +5,7 @@ slug: boukawa-thank-you
 
 暴カワが良すぎたので思わず筆を執ってしまった。だらーと感想を書いてます。
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 暴カワとは
 

@@ -11,7 +11,7 @@ slug: chatwork-summer-internship-2022
 - フロントエンドは TypeScript / React ，バックエンドは Scala / Akka HTTP で DDD をガッツリ学習・実践できる
 - **関数型言語や型の話で盛り上がれる**
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 対象読者
 
