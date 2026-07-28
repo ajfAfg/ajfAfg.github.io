@@ -34,13 +34,14 @@ export type Content = {
 	};
 };
 
-export const slidesFetchPlugin: PluginModule<Content> = (
-	_context,
-	_options,
-) => {
+// NOTE:
+// `Config.plugins` が受け付ける型は `PluginModule<unknown>` であり、
+// TypeScript 7 からデフォルトで有効になった `strictFunctionTypes` の下では
+// `PluginModule<Content>` を代入できないため、型引数を指定していない。
+export const slidesFetchPlugin: PluginModule = (_context, _options) => {
 	return {
 		name: "slides-fetch-plugin",
-		async loadContent() {
+		async loadContent(): Promise<Content> {
 			const text = await fetch(
 				"https://www.docswell.com/user/ajfAfg/feed",
 			).then((response) => response.text());
