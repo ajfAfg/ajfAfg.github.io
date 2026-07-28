@@ -1,5 +1,11 @@
 # プロダクト
 
+## sanpou
+
+https://github.com/ajfAfg/sanpou
+
+TLA+ のトランスパイラ。alt TLA+ の一種である PlusCal が微妙に書きづらかったので作った。sanpou コードを TLA+ コードにトランスパイルするだけだとモデル検査時に反例が見づらくて困るので、反例を sanpou の語彙に再翻訳する機能も備わっている。[詳細はこちら。](https://www.docswell.com/s/ajfAfg/57N917-my-idea-for-ultimate-alt-tlaplus)
+
 ## GitHub Actions による Brainfuck インタプリタ
 
 https://github.com/ajfAfg/brainfuck-by-github-actions
@@ -9,6 +15,12 @@ GitHub Actions のワークフローを用いて実装した Brainfuck インタ
 **使用技術**
 
 GitHub Actions
+
+## Pure LISP
+
+https://github.com/ajfAfg/pure-lisp
+
+'McCarthy, John. "Recursive functions of symbolic expressions and their computation by machine, part I." Communications of the ACM 3.4 (1960): 184-195.' の実装。Rust でインタープリターを作る練習として作った。
 
 ## bean
 
