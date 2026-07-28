@@ -6,7 +6,12 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": [
+			"**",
+			// NOTE: 他社から共有された SVG のため、編集せずチェックの対象外とする
+			"!blog/2022-09-17-chatwork-summer-internship-2022/cw_logo_vt_color.svg"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -15,7 +20,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"preset": "recommended"
 		}
 	},
 	"javascript": {
