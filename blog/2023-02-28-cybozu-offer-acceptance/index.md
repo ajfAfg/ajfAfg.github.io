@@ -5,7 +5,7 @@ slug: cybozu-offer-acceptance
 
 サイボウズさんの内定を承諾しました．入社後は生産性向上チームというチームでエンジニアとしてやっていきます．
 
-<!-- truncate -->
+{/* truncate */}
 
 ## この記事の目的
 
