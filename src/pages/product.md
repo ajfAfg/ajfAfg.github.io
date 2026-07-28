@@ -20,7 +20,7 @@ GitHub Actions
 
 https://github.com/ajfAfg/pure-lisp
 
-'McCarthy, John. "Recursive functions of symbolic expressions and their computation by machine, part I." Communications of the ACM 3.4 (1960): 184-195.' の実装。Rust でインタープリターを作る練習として作った。
+「McCarthy, John. "Recursive functions of symbolic expressions and their computation by machine, part I." Communications of the ACM 3.4 (1960): 184-195.」の実装。Rust でインタープリターを作る練習として作った。
 
 ## bean
 
