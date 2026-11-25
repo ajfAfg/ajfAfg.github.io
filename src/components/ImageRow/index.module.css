@@ -1,0 +1,20 @@
+/* 外側の余白は持たず、Figure の中で使う前提 */
+.imageRow {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: flex-start;
+	/* Figure の中央寄せで幅が縮まないようにする */
+	width: 100%;
+}
+
+/* Markdown の画像記法で書くと画像が <p> に包まれるため、<p> を透過させる */
+.imageRow > p {
+	display: contents;
+}
+
+.imageRow img {
+	flex: 1 1 0;
+	min-width: 0;
+	object-fit: contain;
+}
