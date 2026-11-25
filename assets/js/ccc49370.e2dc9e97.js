@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkajfafg_github_io=self.webpackChunkajfafg_github_io||[]).push([["74"],{1062(e,a,i){i.d(a,{A:()=>f});var s=i(4848);let f={...i(1668).A,Figure:({children:e})=>(0,s.jsx)("figure",{className:"figure_W4ed",children:e}),ImageRow:({children:e})=>(0,s.jsx)("div",{className:"imageRow_Pf9C",children:e})}}}]);
