@@ -1,0 +1,13 @@
+.figure {
+	display: flex;
+	flex-direction: column;
+	/* stretch だと画像が横に引き伸ばされるため、中央寄せにする */
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+/* Markdown の画像記法で書くと画像が <p> に包まれるため、<p> を透過させる */
+.figure > p {
+	display: contents;
+}
