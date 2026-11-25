@@ -82,6 +82,7 @@ const config: Config = {
 				src: "img/ajfAfg.png",
 			},
 			items: [
+				{ type: "localeDropdown", position: "right" },
 				{ to: "/profile", label: "Profile", position: "right" },
 				{ to: "/product", label: "Product", position: "right" },
 				{ to: "/blog", label: "Blog", position: "right" },
