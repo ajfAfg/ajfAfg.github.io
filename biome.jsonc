@@ -28,6 +28,12 @@
 			"quoteStyle": "double"
 		}
 	},
+	"markdown": {
+		"formatter": {
+			// NOTE: Biome 2.6 の Markdown フォーマッターは YAML front matter を壊すため無効化する
+			"enabled": false
+		}
+	},
 	"assist": {
 		"enabled": true,
 		"actions": {
