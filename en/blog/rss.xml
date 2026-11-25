@@ -4,10 +4,18 @@
         <title>ajfAfg's House Blog</title>
         <link>https://ajfafg.github.io/en/blog</link>
         <description>ajfAfg's House Blog</description>
-        <lastBuildDate>Mon, 20 Oct 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Some articles are now also available in English]]></title>
+            <link>https://ajfafg.github.io/en/blog/publish-english-articles</link>
+            <guid>https://ajfafg.github.io/en/blog/publish-english-articles</guid>
+            <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[letsgo English!]]></description>
+            <content:encoded><![CDATA[<p>letsgo English!</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[英語・音楽・お酒]]></title>
             <link>https://ajfafg.github.io/en/blog/english-music-and-liquor</link>
