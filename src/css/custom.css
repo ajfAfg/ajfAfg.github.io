@@ -28,3 +28,12 @@
 	--ifm-color-primary-lightest: #4fddbf;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 本文中の画像の高さを画面の高さに合わせて抑える */
+.markdown img {
+	display: block;
+	margin-inline: auto;
+	max-height: 60vh;
+	width: auto;
+	height: auto;
+}
