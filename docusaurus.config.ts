@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 import { slidesFetchPlugin } from "./src/components/RecentSlides/slidesFetchPlugin";
 import { techArticlesFetchPlugin } from "./src/components/RecentTechArticles/techArticlesFetchPlugin";
+import { remarkImageRowInsideFigure } from "./src/remark/imageRowInsideFigure";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -59,6 +60,10 @@ const config: Config = {
 					onInlineTags: "warn",
 					onInlineAuthors: "warn",
 					onUntruncatedBlogPosts: "warn",
+					remarkPlugins: [remarkImageRowInsideFigure],
+				},
+				pages: {
+					remarkPlugins: [remarkImageRowInsideFigure],
 				},
 				theme: {
 					customCss: "./src/css/custom.css",

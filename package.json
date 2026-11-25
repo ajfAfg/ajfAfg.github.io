@@ -33,7 +33,10 @@
 		"@docusaurus/module-type-aliases": "3.10.2",
 		"@docusaurus/tsconfig": "3.10.2",
 		"@docusaurus/types": "3.10.2",
-		"typescript": "~7.0.0"
+		"@types/mdast": "^4.0.4",
+		"mdast-util-mdx-jsx": "^3.2.1",
+		"typescript": "~7.0.0",
+		"unified": "^11.0.5"
 	},
 	"browserslist": {
 		"production": [
