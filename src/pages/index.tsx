@@ -1,3 +1,4 @@
+import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
@@ -13,17 +14,17 @@ const SnsBadges = (): ReactNode => (
 	<div className={styles.badges}>
 		<Badge
 			shieldsioUrl="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat"
-			altText="GitHub バッジ"
+			altText="GitHub"
 			linkUrl="https://github.com/ajfAfg"
 		/>
 		<Badge
 			shieldsioUrl="https://img.shields.io/badge/-X-181717?logo=x&logoColor=white&style=flat&labelColor=black"
-			altText="X バッジ"
+			altText="X"
 			linkUrl="https://x.com/ajfAfg"
 		/>
 		<Badge
 			shieldsioUrl="https://img.shields.io/badge/-Last.fm-D51007?logo=lastdotfm&logoColor=white&style=flat"
-			altText="Last.fm バッジ"
+			altText="Last.fm"
 			linkUrl="https://www.last.fm/user/ajfAfg"
 		/>
 	</div>
@@ -37,7 +38,9 @@ const HomepageHeader = (): ReactNode => {
 				<Heading as="h1" className="hero__title">
 					{siteConfig.title}
 				</Heading>
-				<p className="hero__subtitle">{siteConfig.tagline}</p>
+				<p className="hero__subtitle">
+					<Translate id="homepage.tagline">健康指向エンジニア</Translate>
+				</p>
 				<SnsBadges />
 			</div>
 		</header>
