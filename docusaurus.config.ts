@@ -105,6 +105,10 @@ const config: Config = {
 		},
 		footer: {
 			style: "dark",
+			links: [
+				{ label: "RSS", href: "pathname:///blog/rss.xml" },
+				{ label: "Atom", href: "pathname:///blog/atom.xml" },
+			],
 			copyright: `Copyright © ${new Date().getFullYear()} ajfAfg`,
 		},
 		prism: {
