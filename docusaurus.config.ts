@@ -9,6 +9,23 @@ import { remarkImageRowInsideFigure } from "./src/remark/imageRowInsideFigure";
 
 const title = "ajfAfg's House";
 
+const defaultLocale = "ja";
+
+// NOTE:
+// `pathname://` のリンクにはロケールのパス（`/en` など）が自動で付かないため、
+// ビルド中のロケールを見て、フィードへのリンクを英語版なら英語版のフィードに向ける。
+// DOCUSAURUS_CURRENT_LOCALE は Docusaurus がロケールごとに設定する環境変数で、
+// config はロケールごとに読み込み直される。
+// `docusaurus start` をロケール指定なしで起動すると "undefined" という文字列になる。
+// 参考: https://github.com/facebook/docusaurus/issues/4542
+const currentLocale = process.env.DOCUSAURUS_CURRENT_LOCALE;
+const localePathPrefix =
+	currentLocale &&
+	currentLocale !== "undefined" &&
+	currentLocale !== defaultLocale
+		? `/${currentLocale}`
+		: "";
+
 const config: Config = {
 	title,
 	tagline: "健康指向エンジニア",
@@ -37,7 +54,7 @@ const config: Config = {
 	// useful metadata like html lang. For example, if your site is Chinese, you
 	// may want to replace "en" with "zh-Hans".
 	i18n: {
-		defaultLocale: "ja",
+		defaultLocale,
 		locales: ["ja", "en"],
 	},
 
@@ -106,8 +123,8 @@ const config: Config = {
 		footer: {
 			style: "dark",
 			links: [
-				{ label: "RSS", href: "pathname:///blog/rss.xml" },
-				{ label: "Atom", href: "pathname:///blog/atom.xml" },
+				{ label: "RSS", href: `pathname://${localePathPrefix}/blog/rss.xml` },
+				{ label: "Atom", href: `pathname://${localePathPrefix}/blog/atom.xml` },
 			],
 			copyright: `Copyright © ${new Date().getFullYear()} ajfAfg`,
 		},
